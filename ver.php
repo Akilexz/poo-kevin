@@ -5,16 +5,17 @@ require_once "controlador/cargar.php";
 require_once "controlador/buscar.php";
 
 ?>
-
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ver Producto</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ver Productos</title>
 </head>
 <body>
     <h1>LISTA DE PRODUCTOS</h1>
     <?php cargar(); ?>
+    <div><br><a href = "insertar.html">Regresar</a></div> 
+
 </body>
 </html>
