@@ -9,3 +9,5 @@
      echo $mensaje;
      echo "<div><br><a href='../ver.php'>Regresar</a></div>";
  }
+
+?>
