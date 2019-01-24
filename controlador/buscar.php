@@ -1,9 +1,10 @@
 <?php
 require_once('../modulo/conexion.php');
 require_once('../modulo/base.php');
+
 function buscar($nombre){
     $consulta = new base ();
-    $filas = $consulta->buscarProductos();
+    $filas = $consulta->buscarProducto();
     echo "<table border = 1 bordercolor=blue>
         <th>ID</th>
         <th>NOMBRE</th>
