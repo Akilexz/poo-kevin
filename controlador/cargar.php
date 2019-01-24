@@ -2,7 +2,7 @@
     function cargar(){
         $consulta = new base ();
         $filas = $consulta->consultarProductos();
-        echo "<table border =1 bordercolor=blue>
+        echo "<table border = 1 bordercolor=blue>
             <th>ID</th>
             <th>NOMBRE</th>
             <th>DESCRIPCION</th>
@@ -15,7 +15,7 @@
             echo "<td>".$fila['descripcion']. "</td>";
             echo "<td>".$fila['categoria']. "</td>";
             echo "<td>".$fila['precio']. "</td>";
-            echo "<td><a href='controlador/eliminar.php?id=".$fila['id']."'>Eliminar"</td>";
+            echo "<td><a href = 'controlador/eliminar.php?id=".$fila['id']."'>Eliminar</td>";
             echo "</tr>" ;
         }
 
