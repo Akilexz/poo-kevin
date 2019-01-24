@@ -19,8 +19,16 @@ require_once "controlador/buscar.php";
         <input type ="text" name="buscar"></td>
         <input type ="submit" value ="Buscar"></td>
         </form>
+
     </div>
-    <?php cargar(); ?>
+     <?php
+     
+     if(isset($_GET['buscar'])){
+         buscar($_GET['buscar']);
+     }else{
+        cargar();
+     }
+     ?>
     <div><br><a href = "insertar.html">Regresar</a></div> 
 
 </body>
