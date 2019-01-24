@@ -45,4 +45,20 @@
             
         }
     }
+        public function buscarProductos($id){
+            $modelo = new Conexion();
+            $conexion = $modelo -> get_conexion();
+            $sql = "selec from producto where id=:id ";
+            $statement = $conexion ->prepare ($sql);
+            $statement -> bindParam(':id',$id);
+            
+            if(!$statement){
+                return "no se emcuentra el producto";
+
+            }else{
+                $statement ->execute();
+                return "su producto se encontro correctamente";
+            }
+
+        }    
 ?>
