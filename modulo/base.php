@@ -47,18 +47,15 @@
         public function buscarProductos($nombre){
             $modelo = new Conexion();
             $conexion = $modelo -> get_conexion();
-            $sql = "selec from producto where nombre=:nombre";
+            $nombre= "%".$nombre."%";
+            $sql = "selec * from producto where nombre like :nombre";
             $statement = $conexion ->prepare ($sql);
             $statement -> bindParam(':nombre',$nombre);
-            
-            if(!$statement){
-                return "no se emcuentra el producto";
-
-            }else{
-                $statement ->execute();
-                return "su producto se encontro correctamente";
+            $statement->execute();
+            while ($resultado= $statement->fetch()){
+                $array [] = $resultado;
             }
-
-        }  
+            return $array;
+        } 
     }     
 ?>
