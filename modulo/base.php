@@ -44,12 +44,12 @@
             }
             
         }
-        public function buscarProductos($id){
+        public function buscarProductos($ nombre{
             $modelo = new Conexion();
             $conexion = $modelo -> get_conexion();
-            $sql = "selec from producto where id=:id ";
+            $sql = "selec from producto where nombre=:nombre";
             $statement = $conexion ->prepare ($sql);
-            $statement -> bindParam(':id',$id);
+            $statement -> bindParam(':nombre',$nombre);
             
             if(!$statement){
                 return "no se emcuentra el producto";
