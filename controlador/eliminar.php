@@ -5,8 +5,7 @@
  if(isset($_GET['id'])){
      $id = $_GET['id'];
      $consultas = new base();
-     $mensaje =$consultas->eliminarProducto($id);
+     $mensaje =$consultas->eliminarProductos($id);
      echo $mensaje;
+     echo "<div><br><a href='../ver.php'>Regresar</a></div>";
  }
-
-?>
