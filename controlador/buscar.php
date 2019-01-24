@@ -3,7 +3,7 @@ require_once('../modulo/conexion.php');
 require_once('../modulo/base.php');
 function buscar($nombre){
     $consulta = new base ();
-    $filas = $consulta->buscarrProductos();
+    $filas = $consulta->buscarProductos();
     echo "<table border = 1 bordercolor=blue>
         <th>ID</th>
         <th>NOMBRE</th>
