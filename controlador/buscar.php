@@ -4,7 +4,7 @@ require_once('../modulo/base.php');
 
 function buscar($nombre){
     $consulta = new base ();
-    $filas = $consulta->buscarProducto();
+    $filas = $consulta->buscarProductos();
     echo "<table border = 1 bordercolor=blue>
         <th>ID</th>
         <th>NOMBRE</th>
@@ -23,7 +23,7 @@ function buscar($nombre){
                 echo "</tr>" ;
             }
         }
-        echo "</table>";
+    echo "</table>";
 
-    }
+}
 ?>
