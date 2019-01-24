@@ -15,7 +15,7 @@
                 return "Error el registro no se puede cargar";
             }else{
                 $statement->execute();
-                return "La carga se reralizo exitosamente";
+                return "La carga se realizo exitosamente";
             }
         }
         public function consultarProductos() {
@@ -30,10 +30,10 @@
         }
                 return $array;
     }
-        public function eliminarProductos(){
+        public function eliminarProductos($id){
             $modelo = new Conexion();
             $conexion = $modelo->get_conexion();
-            $sql = "delete * from Producto where id= :id";
+            $sql = "delete from Producto where id= :id";
             $statement = $conexion->prepare($sql);
             $statement->bindParam(':id',$id);
             if(!$statement){
