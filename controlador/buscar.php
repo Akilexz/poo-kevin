@@ -11,18 +11,18 @@ function buscar($nombre){
         <th>CATEGORIA</th>
         <th>PRECIO</th>";
         if (isset($filas as $fila)){
-        foreach($filas as $fila){
-            echo "<tr>";
-            echo "<td>".$fila['id']. "</td>";
-            echo "<td>".$fila['nombre']. "</td>";
-            echo "<td>".$fila['descripcion']. "</td>";
-            echo "<td>".$fila['categoria']. "</td>";
-            echo "<td>".$fila['precio']. "</td>";
-            echo "<td><a href = 'controlador/eliminar.php?id=".$fila['nombre']."'>Buscar</td>";
-            echo "</tr>" ;
+            foreach($filas as $fila){
+                echo "<tr>";
+                echo "<td>".$fila['id']. "</td>";
+                echo "<td>".$fila['nombre']. "</td>";
+                echo "<td>".$fila['descripcion']. "</td>";
+                echo "<td>".$fila['categoria']. "</td>";
+                echo "<td>".$fila['precio']. "</td>";
+                echo "<td><a href = 'controlador/eliminar.php?id=".$fila['nombre']."'>Buscar</td>";
+                echo "</tr>" ;
+            }
         }
-    }
-    echo "</table>";
+        echo "</table>";
 
     }
 ?>
