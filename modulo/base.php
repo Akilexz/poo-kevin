@@ -45,6 +45,7 @@
             
         }
         public function buscarProductos($nombre){
+            $array = null;
             $modelo = new Conexion();
             $conexion = $modelo -> get_conexion();
             $nombre= "%".$nombre."%";
