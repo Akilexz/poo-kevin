@@ -17,8 +17,8 @@ require_once "controlador/buscar.php";
     <div>
         <form method="get">
         <input type ="text" name="buscar"></td>
-        <input type ="submit" name="Buscar"></td>
-    </form>
+        <input type ="submit" value ="Buscar"></td>
+        </form>
     </div>
     <?php cargar(); ?>
     <div><br><a href = "insertar.html">Regresar</a></div> 
