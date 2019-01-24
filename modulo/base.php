@@ -44,7 +44,6 @@
             }
             
         }
-    }
         public function buscarProductos($id){
             $modelo = new Conexion();
             $conexion = $modelo -> get_conexion();
@@ -60,5 +59,6 @@
                 return "su producto se encontro correctamente";
             }
 
-        }    
+        }  
+    }     
 ?>
