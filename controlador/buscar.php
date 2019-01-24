@@ -10,7 +10,7 @@ function buscar($nombre){
         <th>DESCRIPCION</th>
         <th>CATEGORIA</th>
         <th>PRECIO</th>";
-        if (isset($filas as $fila)){
+        if (isset($filas)){
             foreach($filas as $fila){
                 echo "<tr>";
                 echo "<td>".$fila['id']. "</td>";
