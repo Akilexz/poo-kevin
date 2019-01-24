@@ -31,19 +31,19 @@
             <th>DESCRIPCION</th>
             <th>CATEGORIA</th>
             <th>PRECIO</th>";
-            if (isset($filas)){
+            if(isset($filas)){
         foreach($filas as $fila){
-                echo "<tr>";
-                echo "<td>".$fila['id']. "</td>";
-                echo "<td>".$fila['nombre']. "</td>";
-                echo "<td>".$fila['descripcion']. "</td>";
-                echo "<td>".$fila['categoria']. "</td>";
-                echo "<td>".$fila['precio']. "</td>";
-                echo "<td><a href = 'controlador/eliminar.php?nombre=".$fila['nombre']."'>Eliminar</td>";
+            echo "<tr>";
+            echo "<td>".$fila['id']. "</td>";
+            echo "<td>".$fila['nombre']. "</td>";
+            echo "<td>".$fila['descripcion']. "</td>";
+            echo "<td>".$fila['categoria']. "</td>";
+            echo "<td>".$fila['precio']. "</td>";
+            echo "<td><a href = 'controlador/cargar.php?nombre=".$fila['nombre']."'>Buscar</td>";
             echo "</tr>" ;
-            }
         }
+    }
         echo "</table>";
-        }
-        
+    }
+    
 ?>
