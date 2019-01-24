@@ -16,8 +16,8 @@ require_once "controlador/buscar.php";
     <h1>LISTA DE PRODUCTOS</h1>
     <div>
     <form method="get">
-    <input type ="text" name="buscar">
-    <input type ="submit" name="buscar">
+    <input type ="text" name="buscar"></td>
+    <input type ="submit" name="buscar"></td>
 
     </div>
     <?php cargar(); ?>
