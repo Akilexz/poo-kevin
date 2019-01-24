@@ -3,9 +3,9 @@
     class Conexion {
         public function get_conexion(){
             $user = "postgres";
-            $pass = "1234";
+            $pass = "11041996kevin";
             $host = "localhost";
-            $bd = "pedido";
+            $bd = "Pedido";
             $conexion = new PDO("pgsql:host=$host;dbname=$bd;", $user, $pass);
             return $conexion;
         }
