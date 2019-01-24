@@ -22,7 +22,7 @@
             $array = null;
             $modelo = new Conexion ();
             $conexion = $modelo ->get_conexion();
-            $sql= "select * from Producto";
+            $sql= "select * from producto";
             $statement = $conexion->prepare($sql);
             $statement->execute();
                 while ($resultado= $statement->fetch()){
@@ -33,7 +33,7 @@
         public function eliminarProductos($id){
             $modelo = new Conexion();
             $conexion = $modelo->get_conexion();
-            $sql = "delete from Producto where id= :id";
+            $sql = "delete from producto where id= :id";
             $statement = $conexion->prepare($sql);
             $statement->bindParam(':id',$id);
             if(!$statement){
