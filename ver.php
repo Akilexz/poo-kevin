@@ -26,8 +26,4 @@ require_once "controlador/buscar.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>buscar Producto</title>
 </head>
-<body>
-    <h1>LISTA DE PRODUCTOS</h1>
-    <?php buscar(); ?>
-</body>
 </html>
