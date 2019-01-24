@@ -9,12 +9,13 @@ require_once "controlador/cargar.php";
 <html >
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content=":id=id">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ver Producto</title>
 </head>
 <body>
     <h1>LISTA DE PRODUCTOS</h1>
     <?php cargar(); ?>
+    <div><br><a href ="insertar.html">Regresar</a></div>
 
 </body>
 </html>
