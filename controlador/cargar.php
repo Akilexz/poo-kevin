@@ -39,7 +39,7 @@
                     echo "<td>".$fila['descripcion']. "</td>";
                     echo "<td>".$fila['categoria']. "</td>";
                     echo "<td>".$fila['precio']. "</td>";
-                    echo "<td><a href = 'controlador/cargar.php?id=".$fila['nombre']."'>Buscar</td>";
+                    echo "<td><a href = 'controlador/cargar.php?nombre=".$fila['nombre']."'>Buscar</td>";
                     echo "</tr>" ;
                 }
             }
