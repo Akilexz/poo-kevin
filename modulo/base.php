@@ -22,7 +22,7 @@
             $array = null;
             $modelo = new Conexion ();
             $conexion = $modelo ->get_conexion();
-            $sql= "select * from producto";
+            $sql= "select * from Producto";
             $statement = $conexion->prepare($sql);
             $statement->execute();
                 while ($resultado= $statement->fetch()){
@@ -33,7 +33,7 @@
         public function eliminarProductos($id){
             $modelo = new Conexion();
             $conexion = $modelo->get_conexion();
-            $sql = "delete from producto where id= :id";
+            $sql = "delete from Producto where id= :id";
             $statement = $conexion->prepare($sql);
             $statement->bindParam(':id',$id);
             if(!$statement){
@@ -47,16 +47,16 @@
         public function buscarProductos($nombre){
             $array = null;
             $modelo = new Conexion();
-            $conexion = $modelo -> get_conexion();
-            $nombre= "%".$nombre."%";
-            $sql = "selec * from producto where nombre like :nombre";
-            $statement = $conexion ->prepare ($sql);
-            $statement -> bindParam(':nombre',$nombre);
+            $conexion = $modelo ->get_conexion();
+            $nombre = "%".$nombre."%";
+            $sql = "select * from producto where nombre like :nombre";
+            $statement = $conexion ->prepare($sql);
+            $statement->bindParam(':nombre',$nombre);
             $statement->execute();
-            while ($resultado= $statement->fetch()){
-                $array [] = $resultado;
+                while($resultado=$statement->fetch()){
+                    $array [] = $resultado;            
             }
-            return $array;
-        } 
-    }     
+                return $array;
+        }
+    }
 ?>
