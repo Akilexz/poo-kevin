@@ -3,15 +3,6 @@ require_once "modulo/conexion.php";
 require_once "modulo/base.php";
 require_once "controlador/cargar.php";
 
-
-?>
-<!DOCTYPE html>
-<html>
-<?php
-require_once "modulo/conexion.php";
-require_once "modulo/base.php";
-require_once "controlador/cargar.php";
-
 ?>
 
 <!DOCTYPE html>
